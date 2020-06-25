@@ -1,0 +1,15 @@
+@mixin flexCenter ($direction: row) {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: direction;
+}
+
+@mixin theme($bg, $text) {
+    background: $bg;
+    color: $text;
+}
+
+@function weight($weigth-name){
+    @return map-get($map: $font-weight, $key: $weigth-name );
+}
